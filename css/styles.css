@@ -8,3 +8,25 @@
   --quote-background-color: #e5e7eb;
   --quote-text-color: #1f2937;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 1px dotted red;
+}
+
+html {
+  font: 18px "Roboto", sans-serif;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+nav {
+  background-color: var(--background-color);
+}
