@@ -16,11 +16,24 @@
   border: 1px dotted red;
 }
 
+/* General */
 a, ul {
   text-decoration: none;
   list-style-type: none;
   color: var(--heroHeader-secondary-text-color);
 }
+
+button {
+  width: max-content;
+  padding: 0 32px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--hero-main-text-color);
+  background-color: var(--buttonCalltoaction-color);
+}
+/* ---- */
 
 html {
   font: 18px "Roboto", sans-serif;
@@ -41,7 +54,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 200px;
+  padding: 24px 200px;
   background-color: var(--background-color);
 
 }
@@ -54,6 +67,54 @@ nav {
 
 nav > ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 32px;
+}
+
+.hero {
+  width: 100%;
+  flex: 1 0 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 200px;
+  background-color: var(--background-color);
+}
+
+.left-hero {
+  flex: 1;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 32px;
+}
+
+.left-hero > h1 {
+  flex: 3;
+  color: var(--hero-main-text-color);
+  font-weight: bolder;
+  font-size: 48px;
+}
+
+.left-hero > p {
+  flex: 2;
+  font-size: 18px;
+  color: var(--heroHeader-secondary-text-color);
+  margin: 8px 0;
+}
+
+.left-hero > button {
+  flex: 1;
+}
+
+.img-placeholder {
+  flex: 1;
+  text-align: center;
+  background-color: #555f6e;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--heroHeader-secondary-text-color)
 }
